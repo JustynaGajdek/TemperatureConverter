@@ -11,7 +11,7 @@ class TemperatureConverterFahrenheitToCelsiusTest {
         // Given
         TemperatureConverter converter = new TemperatureConverterFahrenheitToCelsius();
         double fahrenheitTemperature = 50.0;
-        double expectedCelsiusTemperature = (50 - 32) * 5 / 9;
+        double expectedCelsiusTemperature = (double) ((50 - 32) * 5) / 9;
 
         // When
         double actualCelsiusTemperature = converter.temperatureConvert(fahrenheitTemperature);
